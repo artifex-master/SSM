@@ -1,0 +1,394 @@
+:root {
+  /** Custom Colors **/
+  --black: #000;
+  --white: #FFF;
+  --grey-main: #2D2D2D;
+  --grey-dark: #414141;
+  --grey-light: #363636;
+  --grey-d9: #d9d9d9;
+}
+
+.main-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/********************************************************
+  # Buttons
+*********************************************************/
+.btn-default {
+  width: max-content;
+  background: var(--white);
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 21px;
+  color: var(--black);
+  border: 0;
+  padding: 17px 112px;
+  cursor: pointer;
+}
+
+
+
+/***************************************************************************************************
+  # Секция №1: "Шапка"
+***************************************************************************************************/
+.head {
+  width: 100%;
+
+  background-image: url('../images/head__bg-img.png');
+  padding-bottom: 445px;
+}
+
+.head__inner {
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  padding-top: 47px;
+  padding-bottom: 47px;
+
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 149px;
+}
+
+.header__nav {
+  padding-top: 40px;
+}
+
+
+.header__nav ul {
+  display: flex;
+  gap: 80px;
+  text-transform: uppercase;
+
+  font-weight: 300;
+  font-family: 'Inter', sans-serif;
+
+  color: var(--grey-main);
+  font-size: 17px;
+
+
+}
+
+.header__nav ul a { color: var(--black); }
+
+/********** Menu Burger **************/
+.header__mobile-menu {
+  display: flex;
+  flex-direction: column;
+  padding-top: 28px;
+
+  position: fixed;
+  visibility: hidden;
+
+  gap: 10px;
+}
+
+.header__mobile-menu .line {
+  width: 38px;
+  height: 2px;
+  background: var(--black);
+  border: 0;
+  transition: 0.25s ease;
+}
+
+.header__mobile-menu.active .line-one {
+  transform: translateY(12px) rotate(45deg);
+}
+
+.header__mobile-menu.active .line-two {
+  transition: 0.01s; visibility: hidden;
+}
+
+.header__mobile-menu.active .line-three {
+  transform: translateY(-12px) rotate(-45deg);
+}
+
+
+/***************************************************************************************************
+  # "Центральгый блок"
+***************************************************************************************************/
+.head__inner-center {
+  position: relative; 
+}
+
+.head__title {
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 43px;
+  color: var(--grey-main);
+  font-style: normal;
+  text-shadow: 0px 35px 25px rgba(0, 0, 0, 0.25);
+
+  margin-bottom: 12px;
+}
+
+.head__subtitle {
+  width: 52%;
+  
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 31px;
+  text-shadow: 0px 35px 25px rgba(0, 0, 0, 0.75);
+  color: var(--grey-main);
+  font-style: normal;
+}
+
+/********** Форма "Отправить" **************/
+.head__form-send {
+  width: max-content;
+  background: var(--grey-d9);
+
+  padding-top: 48px;
+  padding-right: 37px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  box-shadow: -1px 18px 11px 4px rgba(0,0,0,0.16);
+  -webkit-box-shadow: -1px 18px 11px 4px rgba(0,0,0,0.16);
+  -moz-box-shadow: -1px 18px 11px 4px rgba(0,0,0,0.16);
+
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.head-form__input {
+  width: 305px;
+  height: 68px;
+  background: #FFF;
+  border: 0;
+}
+
+/***************************************************************************************************
+  # "Секция №2: "ПОЧЕМУ НУЖНО РАБОТАТЬ ИМЕННО С НАМИ?"
+***************************************************************************************************/
+.work-w-us {
+  width: 100%;
+
+  padding-top: 109px;
+  padding-bottom: 74px;
+}
+
+.work-w-us__title {
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 37px;
+  color: var(--black);
+
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 181px;
+}
+
+.work-w-us__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.work-w-us__grid-item {
+  flex: 0 0 33.3%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+
+  margin-bottom: 122px;
+
+}
+
+.square-wrapper {
+  display: flex;
+  justify-content: center;
+
+}
+
+.square {
+  width: 145px;
+  height: 119px;
+
+  background: var(--grey-dark);
+  box-shadow: 0px 35px 25px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+
+  box-shadow: 0px 35px 25px 0px #00000040;
+}
+
+.work-w-us__grid-item-desc {
+  
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--black);
+
+  display: flex;
+  justify-content: center;
+
+}
+
+.work-w-us__grid-item-last {
+  padding-left: 120px;
+}
+
+
+
+
+/***************************************************************************************************
+  # "Адаптивный дизайн"
+***************************************************************************************************/
+@media only screen and (max-width: 1740px) {
+  .head__inner-center {
+    position: absolute; 
+  }
+
+  .head__subtitle {
+    margin-bottom: 46px;
+  }
+ 
+  .head__form-send {
+    position: relative;
+  }
+
+  .head-form__input {
+    width: 660px;
+  }
+
+  .head {
+    padding-bottom: 680px;
+  }
+
+}
+
+@media only screen and (max-width: 1440px) {
+  .header__nav ul {
+    gap: 60px;
+  }
+
+  .work-w-us__grid-item-last {
+    padding-left: 80px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .header__logo-img {
+    width: 172px;
+    height: 112px;
+  }
+
+  .header__nav ul {
+    gap: 50px;
+    font-size: 15px;
+  }
+
+  .head__title {
+    font-size: 33px;
+  }
+
+  .head__subtitle {
+    width: 66%; 
+    font-size: 23px;
+  }
+
+}
+
+@media only screen and (max-width: 1024px) {
+  .header__nav {
+    position: fixed;
+    visibility: hidden;
+  }
+
+  .header__mobile-menu {
+    position: relative;
+    visibility: visible;
+  }
+
+  .work-w-us__grid-item {
+    flex: 0 0 50%;
+  }
+
+}
+
+@media only screen and (max-width: 941px) {
+  .head__title {
+    width: 80%;
+  }
+
+  .head__form-send {
+    position: relative;
+  }
+
+  .head__form-send button {
+    width: 100%;
+  }
+
+
+  .head-form__input {
+    width: 420px;
+    height: 68px;
+    background: #FFF;
+    border: 0;
+  }
+  
+
+}
+
+@media only screen and (max-width: 768px) {
+  .work-w-us__grid-item {
+    flex: 0 0 100%;
+  }
+
+  .work-w-us__title {
+    font-size: 24px;
+    margin-bottom: 80px;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .header__logo-img {
+    width: 158px;
+    height: 96px;
+  }
+
+  .head__form-send {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 468px) {
+  .work-w-us__grid {
+    justify-content: left;
+  }
+
+  .square-wrapper {
+    justify-content: left;
+  
+  }
+
+  .work-w-us__grid-item-desc {
+    justify-content: left;
+  }
+
+  .work-w-us__grid-item-last {
+    padding-left: 0;
+  }
+
+  .work-w-us__title {
+    justify-content: left;
+    margin-bottom: 80px;
+  }
+  
+
+}
