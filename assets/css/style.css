@@ -403,7 +403,41 @@
 }
 
 
+/***************************************************************************************************
+  # Секция №4: "Кейсы"
+***************************************************************************************************/
+.cases {
+  padding-top: 57px;
+  padding-bottom: 119px;
+  background: linear-gradient(167.31deg, #EBEBEB 3.76%, #F3F3F3 32.96%, #DDDDDD 62.15%, #FAFAFA 93.1%, rgba(219, 219, 219, 0) 115.87%);
+}
 
+.cases__title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 36px;
+  color: var(--grey-main);
+
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 91px;
+}
+
+.cases__grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cases__grid-img-wrapper {
+  flex: 0 0 30%;
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 28px;
+}
 
 
 
@@ -453,6 +487,10 @@
   .our-services__grid-info {
     padding-left: 80px;
   }
+
+  .cases__grid-img-wrapper {
+    flex: 0 0 38%;
+  }
   
 
 }
@@ -486,6 +524,10 @@
 
   .about-us__title {
     margin-bottom: 125px;
+  }
+
+  .cases__grid-img-wrapper {
+    flex: 0 0 46%;
   }
 
 }
@@ -537,6 +579,10 @@
   .our-services__grid-info {
     padding-left: 112px;
   }
+
+  .cases__grid-img-wrapper {
+    flex: 0 0 50%;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -565,6 +611,14 @@
 
   .our-services__grid-info {
     padding-left: 82px;
+  }
+
+  .cases__title {
+    margin-bottom: 61px;
+  }
+
+  .cases__grid-img-wrapper {
+    flex: 0 0 100%;
   }
 
 }
@@ -747,6 +801,14 @@
 
   .our-services__grid-info {
     padding-left: 40px;
+  }
+  
+  .cases__grid-img-wrapper {
+    width: 100%;
+  }
+
+  .cases__grid-img-wrapper img {
+    width: 100%;
   }
 
 }
