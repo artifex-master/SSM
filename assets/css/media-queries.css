@@ -67,7 +67,7 @@
   }
 
   .cases__grid-img-wrapper {
-    flex: 0 0 38%;
+    flex: 0 0 30%;
   }
 
   .feedback__title {
@@ -87,6 +87,13 @@
   right: 0;
 }
   
+
+}
+
+@media only screen and (max-width: 1717px) {
+  .work-w-us__grid-item-info {
+    width: 80%;
+  }
 
 }
 
@@ -115,6 +122,10 @@
     left: 80%;
     bottom: 92px;
   }
+
+  .about-us__bg {
+    height: 450px;
+  }
 }
 
 @media only screen and (max-width: 1353px) {
@@ -134,9 +145,6 @@
     margin-bottom: 125px;
   }
 
-  .cases__grid-img-wrapper {
-    flex: 0 0 46%;
-  }
 
 }
 
@@ -181,6 +189,10 @@
     left: 74%;
   }
 
+  .work-w-us__grid-item-info {
+    width: 90%;
+  }
+
 }
 
 @media only screen and (max-width: 1160px) {
@@ -192,8 +204,8 @@
     padding-left: 112px;
   }
 
-  .cases__grid-img-wrapper {
-    flex: 0 0 50%;
+  .about-us__bg {
+    height: 420px;
   }
 }
 
@@ -227,10 +239,6 @@
 
   .cases__title {
     margin-bottom: 61px;
-  }
-
-  .cases__grid-img-wrapper {
-    flex: 0 0 100%;
   }
 
   .feedback__arrow-left {
@@ -279,6 +287,10 @@
     position: relative;
     left: 0;
     bottom: 0;
+  }
+
+  .about-us__bg {
+    height: 380px;
   }
 
 }
@@ -344,6 +356,26 @@
     margin-bottom: 80px;
   }
 
+  .square-wrapper {
+    justify-content: center;
+  }
+
+  
+.work-w-us__grid-item-title {
+  display: flex;
+  justify-content: center;
+}
+
+.work-w-us__grid-item-info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.work-w-us__grid-item-info p {
+  width: 92%;
+}
+
   .work-w-us__grid-item-last {
     width: 50%;
   }
@@ -372,6 +404,10 @@
   
   .feedback__arrow-right {
     top: -60px;
+  }
+
+  .about-us__bg {
+    height: 360px;
   }
 
 
@@ -440,6 +476,18 @@
     width: 90%;
   }
 
+  .about-us__bg {
+    height: 500px;
+    background-image: url('../images/about-us__img-mobile.jpg');
+
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+  .about-us__bg {
+    height: 460px;
+  }
 }
 
 @media only screen and (max-width: 468px) {
@@ -536,6 +584,11 @@
     justify-content: left;
     padding-left: 20px;
   }
+
+  .about-us__bg {
+    height: 420px;
+    margin-bottom: 40px;
+  }
   
 
 }
@@ -564,11 +617,15 @@
   }
   
   .cases__grid-img-wrapper {
-    width: 100%;
+    flex: 0 0 96%;
   }
 
   .cases__grid-img-wrapper img {
     width: 100%;
+  }
+
+  .about-us__bg {
+    height: 400px;
   }
 
 }
@@ -596,6 +653,13 @@
   .feedback__arrow-right {
     top: -60px;
     right: 20px;
+  }
+
+}
+
+@media only screen and (max-width: 360px) {
+  .about-us__bg {
+    height: 360px;
   }
 
 }
